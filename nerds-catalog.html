@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nerds-catalog</title>
+</head>
+<body>
+    <header class="header-main">
+        <a href="#" class="main-header-logo">
+            <img href="svg/nerds-logo.svg"  width="160" height="65" src="" alt="nerds logo">
+        </a>
+    
+        <nav class="nav-main">
+            <ul class="site-navigation">
+                <li><a href="">Студия</a></li>
+                <li><a href="">Клиенты</a></li>
+                <li><a href="nerds-catalog.html">Магазин</a></li>
+                <li><a href="">Контакты</a></li>
+            </ul>
+        </nav>
+    
+        <span class="basket">Корзина</span>
+    
+    </header>
+    <main>
+        <h1>Магазин готовых шаблонов</h1>
+        <p class="filter">
+            <ul>
+                <li><b>Стоимость:</b></li>
+                <li><b>Сортировать:</b></li>
+                <li>
+                    <ul>
+                        <li>По цене</li>
+                        <li>По типу</li>
+                        <li>По назначению</li>
+                        <!--Стрелочки-->
+                    </ul>
+                </li>
+            </ul>
+        </p>
+        <!--Здесь будет форма-->
+        <section class="examples">
+            <ul>
+                <li><img src="" alt=""></li>
+                <li><img src="" alt=""></li>
+                <li><img src="" alt=""></li>
+                <li><img src="" alt=""></li>
+                <li><img src="" alt=""></li>
+                <li><img src="" alt=""></li>
+            </ul>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <!--Здесь наверное будет форма
+         и карта на бэкграунде-->
+         <div>
+             <ul class="social">
+                 <li class="vk"><img src="" alt=""></li>
+                 <li class="fb"><img src="" alt=""></li>
+                 <li class="inst"><img src="" alt=""></li>
+             </ul>
+         </div>
+         <b>Давайте дружить, это выгодно!</b>
+         <p class="small">Скидка 10% для друзей из социальных сетей</p>
+    </footer>
+
+    <section class="modal modal-login">
+        <h2>Напишите нам</h2>
+        <form action="https://echo.htmlacademy.ru" class="login-form" method="post">
+            <p>
+                <label for="login-name">Ваше имя:</label>
+                <input type="text" id="login-name" name="login" placeholder="Имя Фамилия" >
+            </p>
+            <p>
+                <label for="user-email">Ваш e-mail:</label>
+                <input type="email" id="user-email"  name="email" placeholder="email@example.com">
+            </p>
+            <p>
+                <label for="user-post">Текст письма:</label>
+                <textarea name="post" id="user-post" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+            </p>
+            <button class="button" type="submit">Отправить</button>
+        </form>
+        <button class="modal-close" type="button">Закрыть</button>
+    </section>
+
+</body>
+</html>
