@@ -12,23 +12,27 @@
 </head>
 
 <body>
-    <header class="header-main">
-        <a href="index.html" class="main-header-logo">
-            <img src="svg/nerds-logo.svg" width="160" height="65" src="" alt="nerds logo">
-        </a>
-
-        <nav class="nav-main">
-            <ul class="site-navigation">
-                <li><a href="">Студия</a></li>
-                <li><a href="">Клиенты</a></li>
-                <li><a href="nerds-catalog.html">Магазин</a></li>
-                <li><a href="">Контакты</a></li>
-            </ul>
-        </nav>
-
-        <span class="basket">Корзина</span>
-
-    </header>
+    <header class="main-header">
+        <div class="container">
+            <a href="#" class="main-header-logo">
+                <img src="svg/nerds-logo.svg" width="160" height="65" src="" alt="nerds logo">
+            </a>
+    
+            <div class="main-navigation-wrapper">
+                <nav class="main-nav">
+                    <ul class="site-navigation">
+                        <li><a href="#">Студия</a></li>
+                        <li><a href="#">Клиенты</a></li>
+                        <li><a href="nerds-catalog.html" class="current">Магазин</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+        
+                <ul class="basket-navigation">
+                    <li><a href="#" class="basket-link current">Корзина</a></li>
+                </ul>
+            </div>
+        </div>
     <main>
         <h1>Магазин готовых шаблонов</h1>
         <p class="filter">
@@ -58,7 +62,7 @@
                         <div class="toggle toggle-max"></div>
                     </div>
                     <div class="price-controls">
-                        <label class="min-price">от <input name="min-price" type="text" value="0 АБВГД"></label>
+                        <label class="min-price">от <input name="min-price" type="text" value="0"></label>
                         <label class="max-price">до <input name="max-price" type="text" value="15 000"></label>
                     </div>
                 </div>
