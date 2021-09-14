@@ -216,6 +216,7 @@ a {
     position: relative;
 
     display: inline-block;
+    vertical-align: middle;
     width: 18px;
     height: 18px;
     padding: 8px;
@@ -273,17 +274,17 @@ a {
     display: block;
 }
 .slider-item:nth-child(1) {
-    background-image: url("img/slide1.png");
+    background-image: url("img/slider/slide1.png");
     background-repeat: no-repeat;
     background-position: 99% 0;
 }
 .slider-item:nth-child(2) {
-    background-image: url("img/slide2.png");
+    background-image: url("img/slider/slide2.png");
     background-repeat: no-repeat;
     background-position: 99% 0;
 }
 .slider-item:nth-child(3) {
-    background-image: url("img/slide3.png");
+    background-image: url("img/slider/slide3.png");
     background-repeat: no-repeat;
     background-position: 99% 0;
 }
@@ -780,7 +781,7 @@ max-width: 260px;
     width: 25px;
     height: 25px;
 
-    background-image: url("img/svg/radio-off.svg");
+    background-image: url("img/catalog_input_label/radio-off.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
     opacity: 0.4;
@@ -797,7 +798,7 @@ max-width: 260px;
     width: 25px;
     height: 25px;
 
-    background-image: url("img/svg/radio-on.svg");
+    background-image: url("img/catalog_input_label/radio-on.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
     opacity: 0.4;
@@ -813,7 +814,7 @@ max-width: 260px;
     width: 26px;
     height: 23px;
 
-    background-image: url("img/svg/checkbox-off.svg");
+    background-image: url("img/catalog_input_label/checkbox-off.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
     opacity: 0.4;
@@ -829,7 +830,7 @@ max-width: 260px;
     width: 26px;
     height: 23px;
 
-    background-image: url("img/svg/checkbox-on.svg");
+    background-image: url("img/catalog_input_label/checkbox-on.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
     opacity: 0.4;
@@ -1162,9 +1163,9 @@ width: 360px;
 }
 
 .background-map {
-    height: 416px;
+    min-height: 416px;
 
-    background-image: url("img/map.jpg");
+    background-image: url("img/footer/map.jpg");
     background-repeat: no-repeat;
     background-position: 50% 0;
 
@@ -1173,7 +1174,7 @@ width: 360px;
 
 .container-top {
     position: relative;
-    height: 416px;
+    min-height: 416px;
 }
 
 .write_us {
@@ -1183,9 +1184,9 @@ width: 360px;
 
     box-sizing: border-box;
     width: 320px;
-    height: 308px;
+    min-height: 308px;
 
-    padding: 50px 50px;
+    padding: 50px;
     
     background-color: #ffffff;
 }
@@ -1196,7 +1197,7 @@ width: 360px;
     font-weight: bold;
 
     margin: 0;
-    margin-bottom: 23px;
+    margin-bottom: 24px;
 }
 
 .write_us p {
@@ -1207,9 +1208,17 @@ width: 360px;
     margin-bottom: 18px;
 }
 
-.write_us .tel {
-    margin-bottom: 36px;
+.contact-phone {
+    color: #666666;
 }
+
+.write_us-button {
+    margin-top: 18px;
+    width: 220px;
+}
+
+
+
 
 .footer-bottom {
     display: flex;

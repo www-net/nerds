@@ -60,13 +60,13 @@
                 <!-- Другие элементы формы -->
                 <fieldset class="filter-item">
                     <legend>Сетка:</legend>
-                    <ul class="list-page-proofs">
+                    <ul>
                         <li class="filter-option">
-                            <input class="visually-hidden filter-input filter-input-radio" id="adaptive" type="radio" name="page-proof" checked disabled>
+                            <input class="visually-hidden filter-input filter-input-radio" id="adaptive" type="radio" name="page-proof" checked>
                             <label for="adaptive">Адаптивная</label>
                         </li>
                         <li class="filter-option">
-                            <input class="visually-hidden filter-input filter-input-radio" id="fixed" type="radio" name="page-proof" disabled>
+                            <input class="visually-hidden filter-input filter-input-radio" id="fixed" type="radio" name="page-proof">
                             <label for="fixed">Фиксированная</label>
                         </li>
                         <li class="filter-option">
@@ -79,15 +79,15 @@
                     <legend>Особенности:</legend>
                     <ul class="list-features">
                         <li class="filter-option">
-                            <input class="visually-hidden filter-input filter-input-checkbox" id="slider" type="checkbox" name="slider" checked disabled>
+                            <input class="visually-hidden filter-input filter-input-checkbox" id="slider" type="checkbox" name="slider" checked>
                             <label for="slider">Слайдер</label>
                         </li>
                         <li class="filter-option">
-                            <input class="visually-hidden filter-input filter-input-checkbox" id="features" type="checkbox" name="features" checked>
+                            <input class="visually-hidden filter-input filter-input-checkbox" id="features" type="checkbox" name="features">
                             <label for="features">Блок преимуществ</label>
                         </li>
                         <li class="filter-option">
-                            <input class="visually-hidden filter-input filter-input-checkbox" id="news" type="checkbox" name="news" disabled>
+                            <input class="visually-hidden filter-input filter-input-checkbox" id="news" type="checkbox" name="news" checked>
                             <label for="news">Новости</label>
                         </li>
                         <li class="filter-option">
@@ -210,8 +210,6 @@
     </main>
 
     <footer class="main-footer">
-        <!--Здесь наверное будет форма
-            и карта на бэкграунде-->
         <div class="background-map">
             <div class="container container-top">
                 <div class="write_us">
@@ -221,9 +219,8 @@
                         <br>
                         ул. Б. Конюшенная, д. 19/8
                     </p>
-                    <p class="tel">тел. +7 (812) 275-75-75</p>
-
-                    <a class="button js-write_us-button" href="#">Напишите нам</a>
+                    <p class="tel"><a class="contact-phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a></p>
+                    <a class="button write_us-button js-write_us-button" href="#">Напишите нам</a>
                 </div>
             </div>
         </div>
@@ -274,6 +271,8 @@
         </form>
         <button class="modal-close" type="button">Закрыть</button>
     </section>
+
+    <script src="js/popup.js"></script>
 
 </body>
 </html>
