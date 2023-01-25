@@ -4,40 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <title>Дизайн-студия "Нёрдс"</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
-    
 </head>
 
 <body>
     <header class="main-header">
         <div class="container">
-            <a href="#" class="main-header-logo">
+            <a class="main-header-logo">
                 <img src="img/svg/nerds-logo.svg" width="160" height="65" alt="nerds logo">
             </a>
 
             <div class="main-navigation-wrapper">
                 <nav class="main-nav">
                     <ul class="site-navigation">
-                        <li><a href="#">Студия</a></li>
-                        <li><a href="#">Клиенты</a></li>
+                        <li><a href="blank.html">Студия</a></li>
+                        <li><a href="blank.html">Клиенты</a></li>
                         <li><a href="nerds-catalog.html">Магазин</a></li>
-                        <li><a href="#">Контакты</a></li>
+                        <li><a href="blank.html">Контакты</a></li>
                     </ul>
                 </nav>
 
                 <ul class="basket-navigation">
-                    <li><a href="#" class="basket-link">Корзина</a></li>
+                    <li><a href="blank.html" class="basket-link">Корзина</a></li>
                 </ul>
             </div>
         </div>
-
-
     </header>
+
     <main>
         <section class="slider">
             <!--Cлайдер-->
@@ -70,7 +66,7 @@
                 </ul>
             </div>
         </section>
-        <!-- /Слвйдер -->
+        <!-- /Слайдер -->
         <section class="products">
             <div class="container">
                 <h2 class="visually-hidden">Услуги дизайн-студии</h2>
@@ -128,10 +124,10 @@
                 <div class="partners-wrapper">
                     <h2 class="visually-hidden">Партнеры</h2>
                     <ul class="partners-list">
-                        <li><a href="#"><img src="img/client/html_academy.png" width="260" height="180" alt="html academy"></a></li>
-                        <li><a href="#"><img src="img/client/barbershop.png" width="260" height="180" alt="barbershop borodinski"></a></li>
-                        <li><a href="#"><img src="img/client/pink.png" width="260" height="180" alt="pink"></a></li>
-                        <li><a href="#"><img src="img/client/mishka.png" width="260" height="180" alt="mishka"></a></li>
+                        <li><a href="blank.html"><img src="img/client/html_academy.png" width="260" height="180" alt="html academy"></a></li>
+                        <li><a href="blank.html"><img src="img/client/barbershop.png" width="260" height="180" alt="barbershop borodinski"></a></li>
+                        <li><a href="blank.html"><img src="img/client/pink.png" width="260" height="180" alt="pink"></a></li>
+                        <li><a href="blank.html"><img src="img/client/mishka.png" width="260" height="180" alt="mishka"></a></li>
                     </ul>
                 </div>
             </div>
@@ -139,8 +135,18 @@
     </main>
 
     <footer class="main-footer">
-        <div class="background-map">
-            <div class="container container-top">
+
+        <div class="map">
+            <h2 class="visually-hidden">Интерактивная карта с контактами студии</h2>
+            <div class="interactive-map" style="position:relative;overflow:hidden;">
+                <a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a>
+                <a href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.321272%2C59.938436&utm_medium=mapframe&utm_source=maps&z=17" style="color:#eee;font-size:12px;position:absolute;top:14px;">Большая Конюшенная улица, 19/8 — Яндекс.Карты</a>
+                <iframe src="https://yandex.ru/map-widget/v1/-/CCUmjHvd1B" width="560" height="416" frameborder="1" allowfullscreen="true" style="position:relative;">
+                </iframe>
+            </div>
+            <p class="background-map">
+                <img src="img/footer/map.jpg" width="1440" height="416" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+            </p>
                 <div class="write_us">
                     <h2>NЁRDS DESIGN STUDIO</h2>
                     <p>
@@ -151,7 +157,6 @@
                     <p class="tel"><a class="contact-phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a></p>
                     <a class="button write_us-button js-write_us-button" href="#">Напишите нам</a>
                 </div>
-            </div>
         </div>
 
         <div class="container footer-bottom">
@@ -172,14 +177,12 @@
                     </a>
                 </li>
             </ul>
-
             <p class="sale">
                 <b>Давайте дружить, это выгодно!</b>
                 <span class="small">Скидка 10% для друзей из социальных сетей</span>
             </p>
         </div>
     </footer>
-
 
     <section class="modal modal-write_us">
         <h2>Напишите нам</h2>
@@ -190,11 +193,11 @@
             </p>
             <p class="login-email">
                 <label for="user-email">Ваш e-mail:</label>
-                <input type="email" id="user-email" name="email" placeholder="email@example.com">
+                <input type="email" id="user-email" name="email" placeholder="email@example.com" invalid>
             </p>
-            <p class="login-form-textarea">
+            <p class="login-textarea">
                 <label for="user-post">Текст письма:</label>
-                <textarea name="post" id="user-post" cols="30" rows="5" placeholder="В свободной форме"></textarea>
+                <textarea id="user-post" name="post" cols="30" rows="5" placeholder="В свободной форме"></textarea>
             </p>
             <button class="button" type="submit">Отправить</button>
         </form>

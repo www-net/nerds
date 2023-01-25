@@ -3,12 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nerds-catalog</title>
+    <link rel="icon" href="favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
-    <title>nerds-catalog</title>
 </head>
 
 <body>
@@ -21,22 +20,22 @@
             <div class="main-navigation-wrapper">
                 <nav class="main-nav">
                     <ul class="site-navigation">
-                        <li><a href="#">Студия</a></li>
-                        <li><a href="#">Клиенты</a></li>
+                        <li><a href="blank.html">Студия</a></li>
+                        <li><a href="blank.html">Клиенты</a></li>
                         <li><a href="nerds-catalog.html" class="current">Магазин</a></li>
-                        <li><a href="#">Контакты</a></li>
+                        <li><a href="blank.html">Контакты</a></li>
                     </ul>
                 </nav>
         
                 <ul class="basket-navigation">
-                    <li><a href="#" class="basket-link">Корзина</a></li>
+                    <li><a href="blank.html" class="basket-link">Корзина</a></li>
                 </ul>
             </div>
         </div>
     </header>
+
     <main class="main-catalog">
         <h1 class="inner-title">Магазин готовых шаблонов</h1>
-
         <!-- форма -->
         <div class="container">
             <form class="form" method="GET" action="https://echo.htmlacademy.ru">
@@ -112,7 +111,6 @@
                             <li><a class="">По типу</a></li>
                             <li><a class="">По назначению</a></li>
                         </ul>
-
                         <!--Стрелочки-->
                         <ul>
                             <li class="button-item">
@@ -145,7 +143,7 @@
                                 <h3 class="catalog-popup-caption">Sedona</h3>
                             </a>
                             <p class="text-simple">Информационный сайт<br> для туристов</p>
-                            <a class="price-button button" href="">9 900 Руб.</a>
+                            <a class="price-button button" href="blank.html">9 900 Руб.</a>
                         </div>
                     </li>
                     <li class="catalog-item">
@@ -155,7 +153,7 @@
                                 <h3 class="catalog-popup-caption">Pink app</h3>
                             </a>
                             <p class="text-simple">Продуктовый лендинг приложения для iOS и Android</p>
-                            <a class="price-button button" href="">9 900 Руб.</a>
+                            <a class="price-button button" href="blank.html">9 900 Руб.</a>
                         </div>
                     </li>
                     <li class="catalog-item">
@@ -165,7 +163,7 @@
                                 <h3 class="catalog-popup-caption">Barbershop</h3>
                             </a>
                             <p class="text-simple">Мужской салон крутых стрижек</p>
-                            <a class="price-button button" href="">9 900 Руб.</a>
+                            <a class="price-button button" href="blank.html">9 900 Руб.</a>
                         </div>
                     </li>
                     <li class="catalog-item">
@@ -175,7 +173,7 @@
                                 <h3 class="catalog-popup-caption">Mishka</h3>
                             </a>
                             <p class="text-simple">Всё для handmade</p>
-                            <a class="price-button button" href="">9 900 Руб.</a>
+                            <a class="price-button button" href="blank.html">9 900 Руб.</a>
                         </div>
                     </li>
                     <li class="catalog-item">
@@ -185,7 +183,7 @@
                                 <h3 class="catalog-popup-caption">A+</h3>
                             </a>
                             <p class="text-simple">Продуктовый лендинг обучающих курсов</p>
-                            <a class="price-button button" href="">9 900 Руб.</a>
+                            <a class="price-button button" href="blank.html">9 900 Руб.</a>
                         </div>
                     </li>
                     <li class="catalog-item">
@@ -195,7 +193,7 @@
                                 <h3 class="catalog-popup-caption">Кваст</h3>
                             </a>
                             <p class="text-simple">Промо-сайт производителя крафтового кваса</p>
-                            <a class="price-button button" href="">9 900 Руб.</a>
+                            <a class="price-button button" href="blank.html">9 900 Руб.</a>
                         </div>
                     </li>
                 </ul>
@@ -210,8 +208,18 @@
     </main>
 
     <footer class="main-footer">
-        <div class="background-map">
-            <div class="container container-top">
+
+        <div class="map">
+            <h2 class="visually-hidden">Интерактивная карта с контактами студии</h2>
+            <div class="interactive-map" style="position:relative;overflow:hidden;">
+                <a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a>
+                <a href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.321272%2C59.938436&utm_medium=mapframe&utm_source=maps&z=17" style="color:#eee;font-size:12px;position:absolute;top:14px;">Большая Конюшенная улица, 19/8 — Яндекс.Карты</a>
+                <iframe src="https://yandex.ru/map-widget/v1/-/CCUmjHvd1B" width="560" height="416" frameborder="1" allowfullscreen="true" style="position:relative;">
+                </iframe>
+            </div>
+            <p class="background-map">
+                <img src="img/footer/map.jpg" width="1440" height="416" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+            </p>
                 <div class="write_us">
                     <h2>NЁRDS DESIGN STUDIO</h2>
                     <p>
@@ -222,7 +230,6 @@
                     <p class="tel"><a class="contact-phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a></p>
                     <a class="button write_us-button js-write_us-button" href="#">Напишите нам</a>
                 </div>
-            </div>
         </div>
 
         <div class="container footer-bottom">
@@ -243,14 +250,12 @@
                     </a>
                 </li>
             </ul>
-
             <p class="sale">
                 <b>Давайте дружить, это выгодно!</b>
                 <span class="small">Скидка 10% для друзей из социальных сетей</span>
             </p>
         </div>
     </footer>
-
 
     <section class="modal modal-login">
         <h2>Напишите нам</h2>
